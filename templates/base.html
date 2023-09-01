@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Mening Sayt</title>
+</head>
+
+<body>
+
+  <header>
+    <button onclick="location.href='{% url 'home' %}'">Bosh saxifa</button>
+    <button onclick="location.href='{% url 'about' %}'">Biz haqimizda</button>
+    <button onclick="location.href='{% url 'telegram' %}'">Telegram
+    <button onclick="location.href='{% url 'instagram' %}'">Instagram  
+    </button>
+  </header>
+
+  {% block content %}
+  {% endblock content %}
+
+</body>
+
+</html>
