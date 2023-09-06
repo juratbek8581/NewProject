@@ -10,4 +10,6 @@ urlpatterns = [
     path('telegram/', TelegramPageView.as_view(), name = 'telegram'),
     path('instagram/', InstagramPageView.as_view(), name = 'instagram'),
     path('admin/', AdminViews.as_view(),name='admin'),
+    path('post/',MyPageView.as_view(), name='post'),
+
     ]
