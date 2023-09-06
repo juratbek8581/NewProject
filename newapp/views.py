@@ -2,6 +2,9 @@ from django.shortcuts import render
 
 # Create your views here.
 
+from django.views.generic import ListView
+from .models import Post
+
 from django.views.generic import TemplateView
 
 
@@ -18,3 +21,10 @@ class TelegramPageView(TemplateView):
 
 class InstagramPageView(TemplateView):
     template_name = 'instagram.html'
+
+class MyPageView(ListView):
+    model = Post
+    template_name = 'post.html'
+
+class AdminViews(TemplateView):
+    template_name = 'admin.html'
