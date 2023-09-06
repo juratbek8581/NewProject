@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>Yangiliklar</title>
+
+<style>
+body {
+  background-image: url('https://exse.eyewated.com/pict/dc6e5864ec78364d-1024x683.jpg');
+  background-size: cover; 
+}
+</style>
+
+</head>
+
+<body>
+
+<h1>Kun yangiliklari</h1> 
+
+<ul>
+
+{% for post in object_list %}
+
+<li><h2>{{ post.title }}</h2></br>{{ post.text}}</li></br>
+
+{% endfor %}
+
+</ul>
+
+</body>
+
+</html>
